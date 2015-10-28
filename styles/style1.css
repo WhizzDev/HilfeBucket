@@ -1,0 +1,81 @@
+
+#hilfes{
+	background-color:red;
+	text-decoration:italic;
+	color:white;
+	font-family:comic sans ms;
+}
+
+#difference{
+	text-align:center;
+	color: white;
+	padding:20px;
+	font-family:algerian;
+}
+
+#names{
+	text-align:Center;
+	background-color:#5f5f5f;
+	padding:10px;
+	color: white;
+}
+
+#type_offer:hover{
+	background-color:#d4d4d4;
+}
+
+.tooltip.top .tooltip-inner {
+    background-color:red;
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: red;
+}
+
+#anim{
+	-webkit-animation-delay: 0.5s;
+}
+
+#offer{
+	font-family:comic sans ms;
+	background-color: #323232;
+	color:black;
+}
+
+#works{
+	font-family:comic sans ms;
+	
+	
+}
+
+.verticalLine {
+    border-right: solid white;
+	border-left: solid white;
+}
+
+#aboutus{
+	background-color: #f7d5d6;'
+}
+
+#aboutus #anchors  a {
+	color: black;
+	font-family:comic sans ms;
+	
+}
+
+#aboutus #anchors  a:hover {
+	color: red;
+	font-family:comic sans ms;
+	font-size: 110%;
+}
+
+#offer a {
+	color: black;
+	font-family:comic sans ms;
+	text-decoration:none;
+	
+}
+#offer a:hover {
+	color: white;
+}
+
+
