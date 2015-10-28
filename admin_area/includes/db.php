@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "ij");
+$con = mysqli_connect("localhost", "root", "", "imformaljob");
 
 if  (mysqli_connect_errno() ){
 	echo  "failed to connect" . mysqli_connect_error();
