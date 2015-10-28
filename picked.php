@@ -60,7 +60,7 @@ include("functions/function.php");
 					<a href ="picked.php"  class="btn btn-danger">Go To JobBucket</a>
 				</span>
 				<div class="col-md-9">
-					<form action=" " method="post" enctype="multipart/form-data" class="form-horizontal">
+					<form action="picked.php" method="post" enctype="multipart/form-data" class="form-horizontal">
 						<table class="table table-hover">
 							<thead>	 
 								<tr>

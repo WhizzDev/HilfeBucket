@@ -1,0 +1,4 @@
+#hide media files
+Options -Indexes
+ErrorDocument 403 "<html><head><title>no</title><body><h1>go away</body></html>"
+DirectoryIndex front.php
