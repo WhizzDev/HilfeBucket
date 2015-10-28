@@ -177,7 +177,7 @@ include("functions/function.php");
 										<p>$work_desc </p>
 										<h3 style='color:red'>$occ_title : $genre_title</h3>
 										<a href= 'index.php?worker_id=$worker_id'  style ='float:left;'>GO back</a>
-										<a href= 'index.php?worker_id=$worker_id' ><button class=\"btn btn-danger\" style ='float:right'>Hire Me</button></a>
+										<a href= 'secure_login/index.php' ><button class=\"btn btn-danger\" style ='float:right'>Hire Me</button></a>
 									</div>		
 									<div class='col-md-2'>
 									</div>
@@ -185,7 +185,7 @@ include("functions/function.php");
 										<p style='font-size:48px;text-align:center;color:red;'><strong>$name</strong></p>
 										<p style='font-size:48px;text-align:center;color:red;'>Salary Expected:<strong>&#8377;$fee</strong></p>
 										<p style='font-size:48px;text-align:center;color:red;'>Rating:<strong>$rating</strong></p>
-										<a href= 'index.php?worker_id=$worker_id' ><button class=\"btn btn-danger\" style='font-size:32px; height:60px; width:200px; margin-bottom:5px;'>Hire Me</button></a>
+										<a href= 'secure_login/index.php' ><button class=\"btn btn-danger\" style='font-size:32px; height:60px; width:200px; margin-bottom:5px;'>Hire Me</button></a>
 										<a href= 'index.php?worker_id=$worker_id' ><button class=\"btn btn-success\" style='font-size:32px; height:60px; width:200px; margin-bottom:5px; float:right;'>Refer Me</button></a>
 									</div>
 								</div>
