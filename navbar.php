@@ -5,6 +5,7 @@
 		sec_session_start();
 	?>
 	<head>
+		<link rel="icon" href="images/hbico.png">
 		<style>
 			.dropdown-menu1{width:800px;height:auto;}
 			a.one{text-decoration:none;font-size:18px;color:red;margin-bottom:15px;}
@@ -22,8 +23,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-				</button>
-				<img class="nav navbar-nav" src="images/hbico.png" alt="logo"><a href="../HilfeBucket/" class="navbar-brand" id="hilfes" style="margin-left:2px">HilfeBucket</a>
+				</button><a href="../HilfeBucket/" class="navbar-brand" id="hilfes" style="margin-left:2px">HilfeBucket</a>
 			</div>
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">

@@ -4,7 +4,6 @@
   <title>HilfeBucket.com</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="images/hbico.png">
   <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="styles/front.css">
   <link rel="stylesheet" href="styles/style.css">
