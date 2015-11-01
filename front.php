@@ -171,12 +171,12 @@
 				
 				<div class="col-sm-4">
 					<img src='images/view1.jpg' class='img-responsive img-circle' alt='Text of the image' align='right' style = "height:150px; width:150px;">
-					<h2 style="text-align:center;">View</h2><h5>Use our simple search and tell us what you require. See list of all the available informal job workers in your area</h5>
+					<h2 style="text-align:center;">View</h2><h5>View the information about various informal umemployed people in your locality with the help of extensive database.</h5>
 				</div>
 				
 				<div class="col-sm-4">
 					<img src='images/shortlist.png' class='img-responsive img-circle' alt='Text of the image' align='right' style = "height:150px; width:150px;">
-					<h2 style="text-align:center;">Shortlist</h2><h5>Use our simple search and tell us what you require. See list of all the available informal job workers in your area</h5>
+					<h2 style="text-align:center;">Shortlist</h2><h5>As per your requirements 'bucket' the people that you want to hire and filter them accordingly.</h5>
 				</div>
 			</div>
 			
@@ -185,16 +185,16 @@
 			<div class="row text-center">
 				<div class="col-sm-4">
 					<img src='images/hire.png' class='img-responsive img-circle' alt='Text of the image' align='left' style = "height:150px; width:150px;">
-					<h2 style="text-align:center;">Hire Me </h2><h5>Use our simple search and tell us what you require. See list of all the available informal job workers in your area</h5>
+					<h2 style="text-align:center;">Hire Me </h2><h5>Hire the people after shortlisting list with just a simple click</h5>
 				</div>	
 				
 				<div class="col-sm-4">
 					<img src='images/refer.png' class='img-responsive img-circle' alt='Text of the image' align='left' style = "height:150px; width:150px;">
-					<h2 style="text-align:center;">Refer Me</h2><h5>Use our simple search and tell us what you require. See list of all the available informal job workers in your area</h5>
+					<h2 style="text-align:center;">Refer Me</h2><h5>If you like the work of the person help them in their progress by Reffering them to other people with just a simple click..</h5>
 				</div>
 				<div class="col-sm-4">
 					<img src='images/help.jpg' class='img-responsive img-circle' alt='Text of the image' align='left' style = "height:150px; width:150px;">
-					<h2 style="text-align:center;">Help India</h2><h5>Use our simple search and tell us what you require. See list of all the available informal job workers in your area</h5>
+					<h2 style="text-align:center;">Help India</h2><h5>Feeling Bad about thee beggars!!.Now don't just sit there watch them.. Help the by our Help India section by uploading their Resume with your selfie and be their guardian and help them  </h5>
 				</div>
 			    <br />
 			</div>
