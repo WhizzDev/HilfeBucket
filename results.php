@@ -1,7 +1,5 @@
 <!DOCTYPE>
-<?php
-include("functions/function.php");
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,32 +10,18 @@ include("functions/function.php");
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style.css" media="all"   />
-	</head>
+	<link rel="stylesheet" href="styles/style1.css" media="all"/>
+	<link rel="stylesheet" href="styles/style2.css" media="all"/>
+	<style>
+	body{
+		margin-top:150px;
+	}
+	</style>
+</head>
 <body>
-    <div class="container" style="background-color:#003366">
-		<form class="form" method="get" action="results.php" enctype="multipart/form-data">
-		    <div class="form-group">
-                <div class="col-lg-11">				  
-					<input type ="text" name="user_query" class="form-control input-lg" placeholder="search here"  />
-				</div>
-				<div class="col-lg-1">
-					<input type ="submit" name="search"  value="search" class="btn btn-lg btn-danger" />
-				</div>
-			</div>				   
-		</form>
-	</div>
-	<div class="container">
-		<div id="menubar" class="row">
-			<ul  id="menu">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="all_products.php">All Jobs</a></li>
-				<li><a href="#">my account</a></li>
-				<li><a href="#">sign up</a></li>
-				<li><a href="#">JobBucket</a></li>
-				<li><a href="#">Contact us</a></li>
-			</ul>       
-		</div>
-		<div class="container">
+    <?php
+include("navbar.php");
+?>	<div class="container">
 			<div class="row">
                 <div class="col-md-3">						             
 					<span><h2>Occupation</h2></span>
@@ -49,12 +33,7 @@ include("functions/function.php");
 						<?php    getGenre(); ?>
 					</ul>
 				</div>
-				<span style= " float:right; font-size:18px; padding:5px; line-height:40px;">
-					<?php  selection();    ?>
-					Welcome Guest!  <strong style ="color:red">JobBucket-</strong> Shortlisted : <strong style ="color:red"> <?php  echo  total_selections();?></strong>
-					Total Price:<strong style ="color:red;text-decoration:underline;"><?php total_price(); ?></strong>
-					<a href ="picked.php"  class="btn btn-danger">Go To JobBucket</a>
-				</span>
+				
 				<div class="col-md-9">
 					<?php
 						if(isset($_GET['search']) and !empty($_GET['user_query'])) {
@@ -95,14 +74,12 @@ include("functions/function.php");
 				</div>
 			</div>
 			<hr>
-	        <div class="container">
-				<div class="footer">
-					<p><strong>Policies:</strong><a class="one" href="#">Terms of use | Security | Privacy | Infringement</a> <strong style="align:center">© 2007-2015</strong></p>
-					<p><strong>Most searched :</strong></p> 
-					<p><a class="one" href="#">Maids | Panditji | links</a></p> 
-				</div>	  
-	        </div>
+	        <?php
+include("footer.php");
+?>
 		</div>	  	  
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -123,7 +123,6 @@ if(isset($_GET['edit_entry'])) {
 		$work_desc= $row_product['work_desc'];
 		$family_desc = $row_product['family_desc'];
         $image= $row_product['image'];
-		$keywords= $row_product['keywords'];
 	}
 }
 ?>
@@ -219,7 +218,7 @@ if(isset($_GET['edit_entry'])) {
 			<select name="gender" class="form-control">
 				<option value="">Select Gender</option>
 				<option value="m" <?php if($gender == "m"){ echo "selected";}?>>Male</option>
-				<option value="f" <?php if($state == "f"){ echo "selected";}?>>Female</option>
+				<option value="f" <?php if($gender == "f"){ echo "selected";}?>>Female</option>
 			</select>
 		</div>
 		</div>
@@ -247,9 +246,6 @@ if(isset($_GET['edit_entry'])) {
 		</div>
 		<div class="form-group col-sm-offset-1 col-sm-12">
 			<textarea name="family_desc" placeholder="Family Background" class="form-control" cols="50" rows="10"><?php echo $family_desc; ?></textarea>
-		</div>
-		<div class="form-group col-sm-offset-1 col-sm-12">
-			<textarea name="keywords" placeholder="Keywords" class="form-control" cols="50" rows="5"><?php echo $keywords; ?></textarea>
 		</div>
 		<div class="form-group col-sm-12">
 			<input type ="submit" name ="update" value="Edit" class="btn btn-danger btn-lg" />
@@ -287,12 +283,11 @@ if(isset($_GET['edit_entry'])) {
 		if(!empty($new_image))
 			$image = $new_image;
 		
-		$keywords = $_POST['keywords'];
 
 		$update_product = "update workers set name = '$name', dob = '$dob', occ_id = '$occ_id', genre_id = '$genre_id',
 		religion = '$religion', gender = '$gender', fee = '$fee', org = '$org', state = '$state', city = '$city',
 		area = '$area', experience = '$experience', work_desc = '$work_desc', family_desc = '$family_desc',
-		image = '$image', keywords = '$keywords' where  worker_id='$update_id'";
+		image = '$image' where  worker_id='$update_id'";
 		$update_pro = mysqli_query($con, $update_product);
 		if($update_pro) {
 			echo"<script>alert ('entry has been updated.')</script>";

@@ -62,6 +62,8 @@ function login($email, $password, $mysqli) {
                     $username = preg_replace("/[^a-zA-Z0-9_\-]+/", 
                                                                 "", 
                                                                 $username);
+                    $_SESSION['user_id'] = $user_id;
+                    $_SESSION['email'] = $email;
                     $_SESSION['username'] = $username;
                     $_SESSION['login_string'] = hash('sha512', 
                               $password . $user_browser);
@@ -112,12 +114,12 @@ function checkbrute($user_id, $mysqli) {
 function login_check($mysqli) {
     // Check if all session variables are set 
     if (isset($_SESSION['user_id'], 
-                        $_SESSION['username'], 
-                        $_SESSION['login_string'])) {
- 
+            $_SESSION['username'], 
+            $_SESSION['login_string'])) {
         $user_id = $_SESSION['user_id'];
         $login_string = $_SESSION['login_string'];
         $username = $_SESSION['username'];
+		$_SESSION['secure'] = rand(1000, 9999);
  
         // Get the user-agent string of the user.
         $user_browser = $_SERVER['HTTP_USER_AGENT'];

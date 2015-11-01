@@ -9,9 +9,16 @@ include_once 'includes/functions.php';
         <title>Secure Login: Registration Form</title>
         <script type="text/JavaScript" src="js/sha512.js"></script> 
         <script type="text/JavaScript" src="js/forms.js"></script>
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<style>
+			.dropdown-menu{width:800px;}
+			a.one:link{text-decoration:none;font-size:15px;color:black;margin-bottom:10px;}
+			a.one:hover{text-decoration:none;font-size:17px;color:red;}
+			.links{list-style:none;}
+			.center{margin-left:10%}
+		</style>
     </head>
     <body>
         <!-- Registration form to be output if the POST variables are not
@@ -32,7 +39,6 @@ include_once 'includes/functions.php';
                     <li>At least one lowercase letter (a..z)</li>
                     <li>At least one number (0..9)</li>
                 </ul>
-            </li>
             <li>Your password and confirmation must match exactly</li>
         </ul>
         <form action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" 

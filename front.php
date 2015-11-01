@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>HilfeBucket.com</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/hbico.png">
   <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="styles/front.css">
   <link rel="stylesheet" href="styles/style.css">
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://www.dreamtemplate.com/dreamcodes/social_icons/tsc_social_icons.css">
   
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 100%;
-      
-  }
-  
+      width: 100%;  
+  }  
   </style>
   
   <script>
@@ -37,51 +34,10 @@
 	</script>
 </head>
 <body data-spy="scroll" data-target="#my-navbar">
-	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar" style="margin-bottom:40px"> 
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-				</button>
-				<a href="#" class="navbar-brand" id="hilfes">HilfeBucket</a>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#home">Home</a></li>	
-					<li><a href="#works">How it Works</a></li>	
-					<li><a href="#offer">What We Offer</a></li>	 
-					<li><a href="#whyus">Why Us</a></li>	 
-					<li><a href="#aboutus">AboutUs</a></li>	
-				</ul>
-				<ul>
-				
-					<div class="form-group">
-					<a href="login3/register.php"	>
-						<input type="button" 
-							   value="Register"
-							   style="float: right;margin-right:20px;margin-top:-5px;"
-								class="btn btn-danger" />
-					</a>				
-					</div>
-					
-					<div class="form-group">
-					<a href="login3/index.php"	>
-						<input type="button" 
-							   value="Login"
-								style="float: right;margin-right:20px;margin-top:-5px;"	
-								class="btn btn-success" /> 
-					</a>			
-					</div>	
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<br><br>
+<?php include "navbar.php"; ?>	
 	<div id="home">
 	
-	 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+	 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="margin-top:125px">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -118,80 +74,80 @@
 	<div class="container-fluid" id="offer">
 		<section>
 			
-				<h1 style="text-align:center;color:white;">What We Offer?</h1>
+				<h1 style="text-align:center;">What We Offer?</h1>
 			
 			<br /><br />
 			<div class="row text-center">
 			
 				<div class="col-sm-2 red-tooltip" data-toggle="tooltip" title="1500 Jobs Available!">
-					<a href="index.php">
+					<a href="index.php?occ=1">
 						<div class="animated fadeIn" id="anim">
 							<div id="type_offer">
-							<blockquote> 
+							 
 								<img src='images/maid.jpg' class='img-responsive img-circle' alt='Text of the image' align='middle' style = "height:150px; width:150px;">
 								<h4 style="text-align:center;">Maid</h4>
-							</blockquote>
+							
 							</div>
 						</div>
 					</a>
 				</div>
 				
 				<div class="col-sm-2 red-tooltip" data-toggle="tooltip" title="1600 Jobs Available!">
-					<a href="front2.php">
+					<a href="index.php?occ=6">
 						<div class="animated fadeIn" id="anim">
 							<div id="type_offer">
-							<blockquote> 
+							
 								<img src='images/secure.png' class='img-responsive img-circle' alt='Text of the image' align='middle' style = "height:150px; width:150px;">
 								<h4 style="text-align:center;">Security Guard</h4>
-							</blockquote>	
+							
 							</div>
 						</div>	
 					</a>
 				</div>
 				<div class="col-sm-2 red-tooltip" data-toggle="tooltip" title="1000 Jobs Available!">
-					<a href="front2.php">
+					<a href="index.php?occ=3">
 						<div class="animated fadeIn" id="anim">
 							<div id="type_offer">
-							<blockquote> 
+							
 								<img src='images/plumber.jpg' class='img-responsive img-circle' alt='Text of the image' align='middle' style = "height:150px; width:150px;">
 								<h4 style="text-align:center;">Plumber</h4>
-							</blockquote>	
+							
 							</div>
 						</div>
 					</a>		
 				</div>
 				<div class="col-sm-2 red-tooltip" data-toggle="tooltip" title="2000 Jobs Available!">
-					<a href="front2.php">
+					<a href="index.php?occ=5">
 						<div class="animated fadeIn" id="anim">
 							<div id="type_offer">
-							<blockquote> 
-								<img src='images/tutor.jpg' class='img-responsive img-circle' alt='Text of the image' align='middle' style = "height:150px; width:150px;">
-								<h4 style="text-align:center;">Tutor</h4>
-							</blockquote>	
+							
+								<img src='images/m.jpg' class='img-responsive img-circle' alt='Text of the image' align='middle' style = "height:150px; width:150px;">
+								<h4 style="text-align:center;">Masseur</h4>
+							
 							</div>
 						</div>
 					</a>		
 				</div>
 				<div class="col-sm-2 red-tooltip" data-toggle="tooltip" title="1100 Jobs Available!">
-					<a href="front2.php">
+					<a href="index.php?occ=4">
 						<div class="animated fadeIn" id="anim">
 							<div id="type_offer">
-							<blockquote> 
+							
 								<img src='images/babysitter.jpg' class='img-responsive img-circle' alt='Text of the image' align='middle' style = "height:150px; width:150px;">
 								<h4 style="text-align:center;">Babysitter</h4>
-							</blockquote>
+							
 							</div>
 						</div>
 					</a>	
 				</div>
 				<div class="col-sm-2 red-tooltip" data-toggle="tooltip" title="1900 Jobs Available!">
-					<a href="front2.php">
+					<a href="index.php?occ=2">
 						<div class="animated fadeIn" id="anim">
 							<div id="type_offer">
-							<blockquote> 
+							
 								<img src='images/cook.jpg' class='img-responsive img-circle' alt='Text of the image' align='middle' style = "height:150px; width:150px;">
 								<h4 style="text-align:center;">Cook</h4>
-							</blockquote>
+							
 							</div>
 						</div>	
 					</a>	
@@ -286,45 +242,9 @@
 		<br />
 	</div>
 	
-	<div class="container-fluid" id="aboutus">
-	<br />
-		<div class="container">
-			<div class="row text-center">
-				<div class="col-sm-4" style="text-align:left">
-					<h3><b style="color:red;">Pledge</b> Of HilfeBucket.com</h3>
-					<br />
-					<h3>Our Aim </h3>
-					
-					<br />
-				</div>	
-				<div class="col-sm-4 verticalLine" style="text-align:left">
-					<h3><b style="color:red;">About</b> HilfeBucket.com</h3>
-					<div id="anchors">
-						<h5><a href="#home" style="text-decoration:none;">Home</a></h5>
-						<h5><a href="#" style="text-decoration:none;">About Us</a></h5>
-						<h5><a href="#" style="text-decoration:none;">Terms Of Use</a></h5>
-						<h5><a href="#" style="text-decoration:none;">Privacy Policy</a></h5>
-						<br />
-					</div>
-				</div>
-				<div class="col-sm-4" style="text-align:left">
-					<h3><b style="color:red;">Contact</b> Us At:</h3>
-					<br />
-					<h4>My Email End</h4>
-					<br />
-					<a class="facebook_cube3d tsc_social_cube64" title="facebook" href="#">facebook</a>
-					<a class="youtube_cube3d tsc_social_cube64" title="youtube" href="#">youtube</a>
-					<a class="twitter_cube3d tsc_social_cube64" title="twitter" href="#">twitter</a>
-					<a class="mail_cube3d tsc_social_cube64" title="mail" href="#">mail</a>
-					<a class="in_cube3d tsc_social_cube64" title="linkedin" href="#">in</a>
-					
-					
-					<br />
-				</div>	
-		    </div>
-		</div>
-	<br />
-	</div>
-	
+	<?php 
+	include("footer.php");?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

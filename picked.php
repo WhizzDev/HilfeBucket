@@ -1,9 +1,4 @@
 
-<?php
-
-include("functions/function.php");
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,32 +10,20 @@ include("functions/function.php");
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles/style.css" media="all"   />
+	<link rel="stylesheet" href="styles/style1.css" media="all"/>
+	<link rel="stylesheet" href="styles/style2.css" media="all"/>
+	<style>
+	body{
+		margin-top:150px;
+	}
+	</style>
 	</head>
 
 <body>
-    <div class="container" style="background-color:#003366">
-		<form class="form" method="get" action="results.php" enctype="multipart/form-data">
-		    <div class="form-group">
-                <div class="col-lg-11">				  
-					<input type ="text" name="user_query" class="form-control input-lg" placeholder="search here"  />
-				</div>
-				<div class="col-lg-1">
-					<input type ="submit" name="search"  value="search" class="btn btn-lg btn-danger" />
-			    </div>
-			</div>				   
-		</form>
-	</div>
-	<div class="container">
-		<div id="menubar" class="row">
-			<ul  id="menu">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="all_products.php">All Jobs</a></li>
-				<li><a href="#">my account</a></li>
-				<li><a href="#">sign up</a></li>
-				<li><a href="#">JobBucket</a></li>
-				<li><a href="#">Contact us</a></li>
-			</ul>       
-		</div>
+<?php
+include "navbar.php";
+?>
+    
 		<div class="container">
 			<div class="row">
                 <div class="col-md-3">						             
@@ -53,12 +36,6 @@ include("functions/function.php");
 						<?php    getGenre(); ?>
 					</ul>
 				</div>
-				<span style= " float:right; font-size:18px; padding:5px; line-height:40px;">
-					<?php  selection();    ?>
-					Welcome Guest!  <strong style ="color:red">JobBucket-</strong> Shortlisted : <strong style ="color:red"> <?php  echo  total_selections();?></strong>
-					Total Price:<strong style ="color:red;text-decoration:underline;"><?php total_price(); ?></strong>
-					<a href ="picked.php"  class="btn btn-danger">Go To JobBucket</a>
-				</span>
 				<div class="col-md-9">
 					<form action="picked.php" method="post" enctype="multipart/form-data" class="form-horizontal">
 						<table class="table table-hover">
@@ -105,7 +82,7 @@ include("functions/function.php");
 								<tr align ="center">
 									<td colspan ="2"><input class="btn btn-success " type = "submit" name ="update_cart" value="Update Cart" /></td>
 									<td ><input class="btn btn-primary" type = "submit" name ="continue" value="Continue Shopping" /></td>
-									<td ><a  class="btn btn-info" href="checkout.php">Checkout</a></td>
+									<td ><a  class="btn btn-info" href="hire.php">Checkout</a></td>
 								</tr>	 
 							</tbody>
 						</table> 
@@ -130,8 +107,12 @@ include("functions/function.php");
 			</div>
 		</div>
 		<div>
-			<div id="footer"></div>	  
+			<?php
+include "footer.php";
+?>	  
 	    </div>
 	</div>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>	

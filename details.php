@@ -1,5 +1,5 @@
 <?php
-include("functions/function.php");
+include("navbar.php");
 ?>
 
 <!DOCTYPE html>
@@ -9,8 +9,13 @@ include("functions/function.php");
 	<title>JobBucket.com</title>
 	<meta name="description" content="maidsjobs">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles/style.css" media="all"   />
+	<link rel="stylesheet" href="styles/style.css" media="all"/>
+	<link rel="stylesheet" href="styles/style1.css" media="all"/>
+	<link rel="stylesheet" href="styles/style2.css" media="all"/>
 	<style>
+	body{
+		margin-top:150px;
+	}
 	.star-rating {
 		font-size: 0;
 		white-space: nowrap;
@@ -81,38 +86,7 @@ include("functions/function.php");
 	</script>
 </head>
 <body>
-    <div class="container" style="background-color:#003366">
-		<form class="form" method="get" action="results.php" enctype="multipart/form-data">
-		    <div class="form-group">
-                <div class="col-lg-11">				  
-					<input type ="text" name="user_query" class="form-control input-lg" placeholder="search here"  />
-				</div>
-				<div class="col-lg-1">
-					<input type ="submit" name="search"  value="search" class="btn btn-lg btn-danger" />
-			    </div>
-			</div>				   
-		</form>
-	</div>
-	<div class="container">
-		<div id="menubar" class="row">
-			<ul  id="menu">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="all_products.php">All Jobs</a></li>
-				<li><a href="#">my account</a></li>
-				<li><a href="#">sign up</a></li>
-				<li><a href="#">JobBucket</a></li>
-				<li><a href="#">Contact us</a></li>
-			</ul>       
-		</div>
-		<div class="container">
-			<div class="row">
-                <span style= " float:right; font-size:18px; padding:5px; line-height:40px;">
-					<?php  selection();    ?>
-					Welcome Guest!  <strong style ="color:red">JobBucket-</strong> Shortlisted :  <strong style="color:red;text-decoration:underline"><?php  echo  total_selections();?></strong>
-					Total Price:<strong style="color:red;text-decoration:underline;"><?php total_price(); ?></strong>
-					<a class="btn btn-danger" href ="picked.php" >Go To JobBucket</a>
-				</span>
-				<div class = "col-md-12">
+    			<div class = "col-md-12">
 		            <?php
 						if(isset($_GET['worker_id']))  {
 							$worker_id = $_GET['worker_id'];
@@ -177,7 +151,7 @@ include("functions/function.php");
 										<p>$work_desc </p>
 										<h3 style='color:red'>$occ_title : $genre_title</h3>
 										<a href= 'index.php?worker_id=$worker_id'  style ='float:left;'>GO back</a>
-										<a href= 'secure_login/index.php' ><button class=\"btn btn-danger\" style ='float:right'>Hire Me</button></a>
+										<a href= 'index.php?add_selection=$worker_id' ><button class=\"btn btn-danger\" style ='float:right'>Hire Me</button></a>
 									</div>		
 									<div class='col-md-2'>
 									</div>
@@ -185,8 +159,7 @@ include("functions/function.php");
 										<p style='font-size:48px;text-align:center;color:red;'><strong>$name</strong></p>
 										<p style='font-size:48px;text-align:center;color:red;'>Salary Expected:<strong>&#8377;$fee</strong></p>
 										<p style='font-size:48px;text-align:center;color:red;'>Rating:<strong>$rating</strong></p>
-										<a href= 'secure_login/index.php' ><button class=\"btn btn-danger\" style='font-size:32px; height:60px; width:200px; margin-bottom:5px;'>Hire Me</button></a>
-										<a href= 'index.php?worker_id=$worker_id' ><button class=\"btn btn-success\" style='font-size:32px; height:60px; width:200px; margin-bottom:5px; float:right;'>Refer Me</button></a>
+										<a href= 'index.php?add_selection=$worker_id' ><button class=\"btn btn-danger\" style='font-size:32px; height:60px; width:200px; margin-bottom:5px;'>Hire Me</button></a>
 									</div>
 								</div>
 									<div class='col-md-8'>
@@ -250,16 +223,13 @@ include("functions/function.php");
 				</div>
 			</div>
 			<hr>
+			<div class="container">
 			<?php include("includes/comment_post.php"); ?>
 			<hr>
-			<div class="container">
-	            <div class="footer">
-					<p><strong>Policies:</strong><a class="one" href="#">Terms of use | Security | Privacy | Infringement</a> <strong style="align:center">© 2007-2015</strong></p>
-					<p><strong>Most searched :</strong></p> 
-					<p><a class="one" href="#">Maids | Panditji | links</a></p> 
-				</div>
-	        </div>
-		</div>
-	</div>
+			</div>
+	<?php include("footer.php"); ?>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 </body>
 </html>

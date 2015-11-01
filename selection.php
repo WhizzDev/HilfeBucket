@@ -1,41 +1,23 @@
 <!DOCTYPE>
-<?php
-
-include("functions/function.php");
-
-?>
 
 
 <html>
 <head>
     <title>ImformalJob</title>
 	<link rel="stylesheet" href="styles/style.css" media="all"   />
+	<link rel="stylesheet" href="styles/style1.css" media="all"/>
+	<link rel="stylesheet" href="styles/style2.css" media="all"/>
+	<style>
+	body{
+		margin-top:150px;
+	}
+	</style>
 </head>
 <body>
-    <!--Main container starts here-->
-    <div class="main_wrapper">
-	    <!--header start here-->
-		<div class="header_wrapper">
-			<img id="logo" src="images/logo.jpg" />
-            <img id="banner" src="images/banner.jpg" />
-		</div>
-		<div class="menubar">
-			<ul  id="menu">
-				<li><a href="index.php">Home</a></li>
-				<li><a href="all_products.php">All Jobs</a></li>
-				<li><a href="#">my account</a></li>
-				<li><a href="#">sign up</a></li>
-				<li><a href="#">shopping cart</a></li>
-				<li><a href="#">Contact us</a></li>
-			</ul>
-			<div id="form">
-				<form method="get" action="results.php" enctype="multipart/form-data">
-					<input type ="text" name="user_query" placeholder="search a product"  />
-					<input type ="submit" name="search"  value="search" />
-				</form>
-			</div>
-		</div>
-		<div class="content_wrapper">
+<?php
+include("navbar.php");
+?>
+ 		<div class="content_wrapper">
 			<div id="sidebar">
 				<div id="sidebar_title">Occupations</div>
 				<ul id="cats">
@@ -46,15 +28,6 @@ include("functions/function.php");
 					<?php    getGenre(); ?>
 				</ul>
 			</div>
-			<div id ="content_area">
-				<?php  cart();    ?>
-				<div  id = "shopping_cart">
-					<span style= " float:right; font-size:18px; padding:5px; line-height:40px;">
-						Welcome Guest!  <b style ="color:yellow">Shopping Cart-</b> Total Items :  <?php  echo  total_items();?>
-						Total Price:<?php total_price(); ?>
-						<a href ="cart.php"  style="color:yellow">Go To Cart</a>
-					</span>
-				</div>
 				<div id = "product_box">
 					<form action="" method="post" enctype="multipart/form-data">
 						<table align="center" width="700"  bgcolor="skyblue">
@@ -120,7 +93,11 @@ include("functions/function.php");
 				</div>
 			</div>
 		</div>
-		<div id="footer">3</div>	  
+		<?php
+include("footer.php");
+?>
 	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>	

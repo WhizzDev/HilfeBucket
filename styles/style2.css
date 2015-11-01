@@ -1,0 +1,82 @@
+video {
+    margin-top:20px;
+	
+}
+
+#top h5{
+	font-family:comic sans ms;
+	font-size:80px;
+	color:red;
+	text-decoration:underline;
+	text-align:center;
+}
+
+#helps{
+	margin-top:30px;
+	
+}
+
+#helps p{
+	color:white;
+	font-size:23px;
+}
+
+#anim{
+	-webkit-animation-delay: 0.5s;
+}
+
+img{
+	float: center;
+    margin: auto;
+}
+
+#names1{
+	margin-top:20px;
+	font-family:comic sans ms;
+	font-size: 20px;
+}
+
+#names2{
+	margin-left:40px;
+	margin-right:40px;
+	background-color:#171717;
+	color:white;
+	padding:5px;
+	padding-bottom:35px;
+	text-align:left;
+}
+
+#names3{
+	margin-left:40px;
+	margin-right:40px;
+	background-color:#171717;
+	color:white;
+	padding:10px;
+	padding-bottom:10px;
+	text-align:left;
+}
+
+#names4{
+	margin-left:40px;
+	margin-right:40px;
+	background-color:#171717;
+	color:white;
+	padding:5px;
+	padding-bottom:5px;
+}
+
+p{
+	color:#ffca00;
+}
+
+#heads h5{
+	font-family:algerian;
+	font-size:50px;
+	color:yellow;
+	text-decoration:underline;
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+

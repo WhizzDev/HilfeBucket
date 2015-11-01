@@ -55,6 +55,18 @@
 		if (isset($_GET['view_uncomments'])){
 			include("includes/view_uncomments.php");
 		}
+		if (isset($_GET['view_uploaders'])){
+			include("includes/view_uploaders.php");
+		}
+		if (isset($_GET['uploader'])){
+			include("includes/uploader.php");
+		}
+		if (isset($_GET['app_upload'])){
+			include("includes/app_upload.php");
+		}
+		if (isset($_GET['del_upload'])){
+			include("includes/del_upload.php");
+		}
 	?>
 			</div>
 			<div class="col-md-3">

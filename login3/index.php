@@ -29,7 +29,7 @@ if (login_check($mysqli) == true) {
         ?> 
 		<div class="container">
 		<div class="row">
-        <form action="includes/process_login.php" method="post" name="login_form" class="form-horizontal">                      
+        <form action="process_login.php" method="post" name="login_form" class="form-horizontal">                      
 			<div class="form-group">
             <label>Email:</label><input type="email" name="email" class="form-control"/>
             <label>Password:</label> <input type="password" 
@@ -40,9 +40,11 @@ if (login_check($mysqli) == true) {
 			<input type="button" 
                    value="Login" 
                    onclick="formhash(this.form, this.form.password);" class="btn btn-danger" /> 
-			</div>	   
+			</div>
+			<div class="form-group">
+			<a href="../" class="btn btn-info">Back</a>
+			</div>
         </form>
-		</div>
 		</div>
  
 <?php
@@ -51,9 +53,8 @@ if (login_check($mysqli) == true) {
  
             echo '<p>Do you want to change user? <a href="includes/logout.php">Log out</a>.</p>';
         } else {
-                        echo '<p>Currently logged ' . $logged . '.</p>';
-                        echo "<p>If you don't have a login, please <a href='register.php'>register</a></p>";
+                echo "<p>If you don't have a login, please <a href='register.php' class=\"btn btn-success\">Register</a></p>";
                 }
-?>      
+?>      </div>
     </body>
 </html>
