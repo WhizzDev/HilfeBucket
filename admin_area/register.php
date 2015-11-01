@@ -26,15 +26,15 @@ include_once 'includes/functions.php';
 			<form class="form-horizontal" action="<?php echo esc_url($_SERVER['PHP_SELF']); ?>" method="post" name="register">
 				<div class="form-group">
 					<label class="control-label col-sm-4">Name of Organization</label>
-					<div class="col-sm-8"><input class="form-control" type='text' name='pername' placeholder="Name of Organization"/></div>
+					<div class="col-sm-8"><input class="form-control" type='text' name='org_name' placeholder="Name of Organization"/></div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-4">Username</label>
-					<div class="col-sm-8"><input  class="form-control" type="text" name="uname" placeholder="Enter your Username" /></div>
+					<div class="col-sm-8"><input class="form-control" type="text" name="uname" placeholder="Enter your Username" /></div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-4">Email Address</label>
-					<div class="col-sm-8"><input  class="form-control" type="text" name="email" placeholder="example@gmail.com" /></div>
+					<div class="col-sm-8"><input class="form-control" type="text" name="email" placeholder="example@gmail.com" /></div>
 				</div>
 				<div class="form-group">
 					<label class="control-label col-sm-4">Password</label>
@@ -47,7 +47,7 @@ include_once 'includes/functions.php';
 				<div class="form-group">
 					<label class="control-label col-sm-4">Phone Number</label>
 					<div class="col-sm-8">
-					<div class="col-sm-4"><input class="form-control"type="text" name="stdcode" maxlength="6" /></div>
+					<div class="col-sm-4"><input class="form-control"type="text" name="stdcode" maxlength="5" /></div>
 					<div class="col-sm-8"><input class="form-control"type="text" name="lndline" maxlength="8" /></div>
 					</div>
 				</div>
@@ -59,7 +59,7 @@ include_once 'includes/functions.php';
 				<div class="form-group">
 					<label class="control-label col-sm-4">Fax</label>
 					<div class="col-sm-8">
-					<div class="col-sm-4"><input class="form-control"type="text" name="faxcode" maxlength="6" /></div>
+					<div class="col-sm-4"><input class="form-control"type="text" name="faxcode" maxlength="5" /></div>
 					<div class="col-sm-8"><input class="form-control"type="text" name="fax" maxlength="8" /></div>
 					</div>
 				</div>
@@ -83,13 +83,22 @@ include_once 'includes/functions.php';
 					<div class="col-sm-8"><input class="form-control"type="text" name="confirmpwd"/></div>	
 				</div>
 				
-            <input type="button" 
-                   value="Register" 
+            <input class="btn btn-danger btn-lg col-sm-offset-4" type="button" 
+                   value="Register" style="margin-bottom:20px"
                    onclick="return regformhash(this.form,
                                    this.form.username,
                                    this.form.email,
                                    this.form.password,
-                                   this.form.confirmpwd);" /> 
+                                   this.form.confirmpwd,
+								   this.form.stdcode,
+								   this.form.lndline,
+								   this.form.mob,
+								   this.form.faxcode,
+								   this.form.fax,
+								   this.form.add,
+								   this.form.city,
+								   this.form.state,
+								   this.form.pin);" /> 
         </form>
 		</div>
 		<div class="col-md-6">
@@ -106,7 +115,7 @@ include_once 'includes/functions.php';
             </li>
             <li>Your password and confirmation must match exactly</li>
         </ul>
+		<p>Return to the <a href="index.php">login page</a>.</p>
 		</div>
-        <p>Return to the <a href="index.php">login page</a>.</p>
     </body>
 </html>
