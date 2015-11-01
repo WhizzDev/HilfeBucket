@@ -17,11 +17,11 @@ function formhash(form, password) {
  
 function regformhash(form, uid, email, password, conf, std, lndline, mob, fxcode, fax, add, city, state, pin) {
     // Check each field has a value
-	if (uid.value == ''  || email.value == ''  || 
-        password.value == ''  || std.value == ''  || 
-        lndline.value == ''  ||  add.value == ''  || 
-        city.value == ''  ||  state.value == ''  || 
-        pin.value == ''  ||  mob.value == ''  ||  conf.value == '') {
+	if (form.uid.value == ''  || form.email.value == ''  || 
+        form.password.value == ''  || form.std.value == ''  || 
+        form.lndline.value == ''  ||  form.add.value == ''  || 
+        form.city.value == ''  ||  form.state.value == ''  || 
+        form.pin.value == ''  ||  form.mob.value == ''  ||  form.conf.value == '') {
 		
 		form.password.value = '';
 		form.conf.value = '';
@@ -41,7 +41,7 @@ function regformhash(form, uid, email, password, conf, std, lndline, mob, fxcode
     // Check that the password is sufficiently long (min 6 chars)
     // The check is duplicated below, but this is included to give more
     // specific guidance to the user
-    if (password.value.length < 6) {
+    if (form.password.value.length < 6) {
         alert('Passwords must be at least 6 characters long.  Please try again');
         form.password.focus();
         return false;
@@ -51,7 +51,7 @@ function regformhash(form, uid, email, password, conf, std, lndline, mob, fxcode
     // At least six characters 
  
     var re = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/; 
-    if (!re.test(password.value)) {
+    if (!re.test(form.password.value)) {
         alert('Passwords must contain at least one number, one lowercase and one uppercase letter.  Please try again');
         form.password.value = "";
         form.password.focus();
@@ -59,7 +59,7 @@ function regformhash(form, uid, email, password, conf, std, lndline, mob, fxcode
     }
  
     // Check password and confirmation are the same
-    if (password.value != conf.value) {
+    if (form.password.value != form.conf.value) {
         alert('Your password and confirmation do not match. Please try again');
 		form.conf.value = '';
 		form.conf.focus();
@@ -67,7 +67,7 @@ function regformhash(form, uid, email, password, conf, std, lndline, mob, fxcode
     }
 	
 	st=/^0[1-9][0-9]{1, 3}/;
-	if(!st.test(std.value)){
+	if(!st.test(form.std.value)){
 		alert("Invalid STD code");
 		form.std.value = "";
 		form.std.focus();
@@ -75,37 +75,45 @@ function regformhash(form, uid, email, password, conf, std, lndline, mob, fxcode
 	}
 	
 	ll=/^[1-9][0-9]{5, 7}/;
-	if(!ll.test(lndline.value)){
+	if(!ll.test(form.lndline.value)){
 		alert("Invalid Phone Number");
 		form.lndline.value = "";
 		form.lndline.focus();
 		return false;
 	}
 	
+	if(form.std.value.length + form.lndline.value.length != 11){
+		alert("Invalid STD and Phone Number combination");
+	}
+	
 	mb=/^[7-9][0-9]{9}/;
-	if(!mb.test(mob.value)){
+	if(!mb.test(form.mob.value)){
 		alert("Invalid Mobile Number");
 		form.mob.value = "";
 		form.mob.focus();
 		return false;
 	}
 	
-	if(!st.test(fxcode.value)){
+	if(!st.test(form.fxcode.value)){
 		alert("Invalid FAX number");
 		form.fxcode.value = "";
 		form.fxcode.focus();
 		return false;
 	}
 	
-	if(!ll.test(fax.value)){
+	if(!ll.test(form.fax.value)){
 		alert("Invalid FAX Number");
 		form.fax.value = "";
 		form.fax.focus();
 		return false;
 	}
 	
+	if(form.fxcode.value.length + form.fax.value.length != 11){
+		alert("Invalid FAX Number");
+	}
+	
 	ci=/^[A-Za-z\s]+/;
-	if(!ci.test(city.value)){
+	if(!ci.test(form.city.value)){
 		alert("Invalid City Name");
 		form.city.value = "";
 		form.city.focus();
@@ -113,7 +121,7 @@ function regformhash(form, uid, email, password, conf, std, lndline, mob, fxcode
 	}
 	
 	pn=/^[0-9]{6}/;
-	if(!pn.test(pin.value)){
+	if(!pn.test(form.pin.value)){
 		alert("Incorrect Pin Code");
 		form.pin.value="";
 		form.pin.focus();
