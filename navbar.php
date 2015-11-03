@@ -6,6 +6,17 @@
 	?>
 	<head>
 		<link rel="icon" href="images/hbico.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="styles/style.css" media="all"/>
+		<link rel="stylesheet" href="styles/style2.css" media="all"/>
+		<link rel="stylesheet" href="styles/style1.css" media="all"/>
+		<link rel="stylesheet" href="styles/front.css">
+		<link rel="stylesheet" type="text/css" href="http://www.dreamtemplate.com/dreamcodes/social_icons/tsc_social_icons.css">
+	<style>
+	body{
+		margin-top:150px;
+	}
+	</style>
 		<style>
 			.dropdown-menu1{width:800px;height:auto;}
 			a.one{text-decoration:none;font-size:18px;color:red;margin-bottom:15px;}

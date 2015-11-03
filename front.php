@@ -4,12 +4,6 @@
   <title>HilfeBucket.com</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="animate.css">
-  <link rel="stylesheet" href="styles/front.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="http://www.dreamtemplate.com/dreamcodes/social_icons/tsc_social_icons.css">
-  
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -36,7 +30,7 @@
 <?php include "navbar.php"; ?>	
 	<div id="home">
 	
-	 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="margin-top:125px">
+	 <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" style="margin-top:-25px">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
 		  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -73,7 +67,7 @@
 	<div class="container-fluid" id="offer">
 		<section>
 			
-				<h1 style="text-align:center;">What We Offer?</h1>
+			<h1 style="text-align:center;margin-top:20px">What We Offer?</h1>
 			
 			<br /><br />
 			<div class="row text-center">

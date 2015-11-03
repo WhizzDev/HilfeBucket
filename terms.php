@@ -25,7 +25,7 @@ display:none;
 </style>
 </head>
 <body>
- 
+<?php include "navbar.php"?> 
 <div id="flip"><h1>TERMS AND CONDITIONS</h1>(click here)</div>
 <div id="panel" ><p>THIS PAGE STATES THE TERMS AND CONDITIONS UNDER WHICH YOU MAY USE HILFEBUCKET.COM, AN ONLINE SERVICE TO POST RESUMES FOR EMPLOYMENT OPPORTUNITIES AND SEARCH FOR USER RESUMES (HILEBUCKET.COM OR WEBSITEORCOMPANY</p>
 <p>THESE TERMS AND CONDITIONS INCLUDE HILEBUCKET.COM PRIVACY POLICY WHICH IS INCORPORATED INTO THESE TERMS AND CONDITIONS BY REFERENCE. BY USING HILEBUCKET.COM, YOU ARE INDICATING YOUR AGREEMENT TO THE TERMS AND CONDITIONS, INCLUDING THE HILEBUCKET.COM PRIVACY POLICY.</p>
@@ -60,8 +60,9 @@ display:none;
 <p><h2>REGISTRATION AND PASSWORD ON HILEBUCKET.COM-</h2><p> You are responsible for maintain the confidentiality of your password and information. You shall be responsible for all uses of your registration whether or not authorized by the user. If there is any breach or unauthorized use of your registration or password you agree to immediately notify HILEBUCKET.COM</p>
 
 </div><br><br>
-<h4 align="center">PLEASE READ IT CAREFULLY...</h4>
+<h4 align="center" style="margin-bottom:50px">PLEASE READ IT CAREFULLY...</h4>
 
+<?php include "footer.php"?>
 </body>
 </html>
 

@@ -25,7 +25,7 @@ display:none;
 </style>
 </head>
 <body>
- 
+ <?php include "navbar.php";?>
 <div id="flip"><h1>PRIVACY POLICY</h1>(click here)</div>
 <div id="panel" style="text-align:left" >
 <h2>What we collect?</h2>
@@ -83,8 +83,8 @@ You may request details of personal information which we hold about you under th
 If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible, at the above address. We will promptly correct any information found to be incorrect.
 </h2>
 </div><br><br>
-<h2 align="center">PLEASE READ IT CAREFULLY...</h2>
-
+<h2 align="center" style="margin-bottom:50px">PLEASE READ IT CAREFULLY...</h2>
+<?php include "footer.php";?>
 </body>
 </html>
 

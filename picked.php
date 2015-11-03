@@ -7,16 +7,6 @@
 	<meta charset="utf-8">
 	<title>JobBucket.com </title>
 	<meta name="description" content="maidsjobs">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="styles/style.css" media="all"   />
-	<link rel="stylesheet" href="styles/style1.css" media="all"/>
-	<link rel="stylesheet" href="styles/style2.css" media="all"/>
-	<style>
-	body{
-		margin-top:150px;
-	}
-	</style>
 	</head>
 
 <body>

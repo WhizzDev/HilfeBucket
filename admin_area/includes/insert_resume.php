@@ -11,7 +11,6 @@ include("includes/db.php");
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<script> 
 		function valid(form){
-			/*name, occ_id, genre_id, day, mon, yr, fee, religion, org, gender, state, city, area, experience*/
 			chk_name = /^[A-Za-z]+/;
 			chk_fee = /^[0-9]{1,7}/;
 			chk_rel = /^[A-Za-z]+/;

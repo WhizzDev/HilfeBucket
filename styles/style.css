@@ -81,7 +81,6 @@ font-size:18px;
 
 
 #menu a:hover {
- color: yellow;
  font-weight:bolder;
  text-decoration:overline;
 }
@@ -143,9 +142,7 @@ text-align:center;
 #cats a{
    color:white; padding:4px;text-align:center; font-size:15px; text-decoration:none; font-family:Comic Sans Ms;
 }
- #cats a:hover{
-  color:yellow;
- }
+
  
  
  #products_box {

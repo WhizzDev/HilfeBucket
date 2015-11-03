@@ -5,8 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 .developers{top:40%;}
 .developers1{top:5%;}
@@ -34,6 +32,7 @@ a:hover{color:black;}
 </style>		
 </head>
 <body>
+<?php include "navbar.php;"?>
  <h1>ABOUT US</h1>
  <div class="container-fluid">
  <div class="row">
@@ -251,7 +250,8 @@ a:hover{color:black;}
  </div>
  <div class="row" style="background-color:black;text-align:center;color:white;">
       <p>&copy;hilfebucket.in</p>
+  </div>
  </div>
- </div>
+<?php include "footer.php;"?>
 </body>
 </html>
