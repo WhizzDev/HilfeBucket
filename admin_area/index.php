@@ -83,7 +83,7 @@
 					<a href="index.php?view_feedback" class="list-group-item">FeedBack</a>
 					<a href="index.php?view_helpindia" class="list-group-item">Help India Uploaders</a>
 					<a href="index.php?view_uploaders" class="list-group-item">Self Uploaders</a>
-					<a href="index.php?logout" class="list-group-item" style="background-color:#5cb85c !important;color:white !important;">Admin Logout</a>
+					<a href="../" class="list-group-item" style="background-color:#5cb85c !important;color:white !important;">Back</a>
 				</ul>
 			</div>
 		</div>

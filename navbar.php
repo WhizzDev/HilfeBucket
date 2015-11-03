@@ -46,14 +46,14 @@
 					<img class="center" src="images/maid.jpg" height="50px" width="50px"/>
 					<h2>Household</h2>
 					<ul class="links">
-					<li><a class="one" href="#">Maid</a> </li>
-					<li><a class="one" href="#">Babysitter</a> </li>
-					<li><a class="one" href="#">Cook</a> </li>
-					<li><a class="one" href="#">Laundress</a></li> 
-					<li><a class="one" href="#">Masseur</a> </li>
-					<li><a class="one" href="#">Pandit Ji</a> </li>
-					<li><a class="one" href="#">Physio</a> </li>
-					<li><a class="one" href="#">Security Guard</a> </li>
+					<li><a class="one" href="index.php?occ=1">Maid</a> </li>
+					<li><a class="one" href="index.php?occ=4">Babysitter</a> </li>
+					<li><a class="one" href="index.php?occ=2">Cook</a> </li>
+					<!--<li><a class="one" href="#">Laundress</a></li> -->
+					<li><a class="one" href="index.php?occ=5">Masseur</a> </li>
+					<!--<li><a class="one" href="#">Pandit Ji</a> </li>
+					<li><a class="one" href="#">Physio</a> </li>-->
+					<li><a class="one" href="index.php?occ=6">Security Guard</a> </li>
 					
 					</ul>
 					</div>
@@ -61,19 +61,19 @@
 					<img class="center" src="images/plumber.jpg" height="50px" width="50px"/>
 					<h2>Skilled</h2>
 					<ul class="links">
-					<li><a class="one" href="#">Barber</a> </li>
+					<!--<li><a class="one" href="#">Barber</a> </li>
 					<li><a class="one" href="#">Carpenter</a> </li>
 					<li><a class="one" href="#">Driver</a> </li>
 					<li><a class="one" href="#">Electrician</a></li> 
 					<li><a class="one" href="#">Mechanic</a> </li>
-					<li><a class="one" href="#">Painter</a> </li>
-					<li><a class="one" href="#">Plumber</a> </li>
-					<li><a class="one" href="#">Tailor</a> </li>
+					<li><a class="one" href="#">Painter</a> </li>-->
+					<li><a class="one" href="index.php?occ=3">Plumber</a> </li>
+					<!--<li><a class="one" href="#">Tailor</a> </li>
 					<li><a class="one" href="#">Welder</a> </li>
-					<li><a class="one" href="#">Photographer</a> </li>
+					<li><a class="one" href="#">Photographer</a> </li>-->
 					</ul>
 					</div>
-			        <div class="col-md-3">
+			        <!--<div class="col-md-3">
 					<img class="center" src="images/tutor.jpg" height="50px" width="50px"/>
 					<h2>Assistant</h2>
 					<ul class="links">
@@ -94,7 +94,7 @@
 			        <div class="col-md-3">
 					<img class="center" src="images/popular.png" height="50px" width="50px"/>
 					<h3>Popular</h3>
-					</div>
+					</div>-->
 					</ul>
 					</li>
 					<li><a href="index.php">Start Hiring</a></li>	
