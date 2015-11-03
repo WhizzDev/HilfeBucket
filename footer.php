@@ -13,7 +13,7 @@
 				<div class="col-sm-4 verticalLine" style="text-align:left">
 					<h3 style="text-decoration:underline"><b style="color:red;">About</b> HilfeBucket.com</h3>
 					<div id="anchors">
-						<h4><a href="aboutus.php" style="text-decoration:none;">About Us</a></h4>
+						<!--<h4><a href="aboutus.php" style="text-decoration:none;">About Us</a></h4>-->
 						<h4><a href="terms.php" style="text-decoration:none;">Terms Of Use</a></h4>
 						<h4><a href="privacy.php" style="text-decoration:none;">Privacy Policy</a></h4>
 						<h4><a href="admin_area/" style="text-decoration:none;">Are you an Administrator?</a></h4>
