@@ -167,6 +167,7 @@ function getOccWorker() {
 				$area = $row_pro['area'];
 				$city = $row_pro['city'];
 				$state = $row_pro['state'];
+				$dob  = $row_pro['dob'];
 				$da = $dob;
 				$birthDate = date("m-d-Y",strtotime($da));
                 $birthDate = explode("-", $birthDate);
@@ -215,6 +216,7 @@ function getGenreWorker() {
 				$area = $row_pro['area'];
 				$city = $row_pro['city'];
 				$state = $row_pro['state'];
+				$dob  = $row_pro['dob'];
 				$da = $dob;
 				$birthDate = date("m-d-Y",strtotime($da));
                 $birthDate = explode("-", $birthDate);
