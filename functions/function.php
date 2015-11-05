@@ -167,6 +167,12 @@ function getOccWorker() {
 				$area = $row_pro['area'];
 				$city = $row_pro['city'];
 				$state = $row_pro['state'];
+				$da = $dob;
+				$birthDate = date("m-d-Y",strtotime($da));
+                $birthDate = explode("-", $birthDate);
+                $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md")
+                ? ((date("Y") - $birthDate[2]) - 1)
+                : (date("Y") - $birthDate[2]));
 				echo "
 				    <a href= 'details.php?worker_id=$worker_id' target='blank' class='links'>
 					<div id = 'single_product'>
@@ -176,7 +182,7 @@ function getOccWorker() {
 							<p style='color:black'>Work: $area, <br>$city, $state</p>
 							<p><b>Religion: $religion</b><p>
 							<p><b>Experience: $experience</b><p>
-							<p><b>Age var</b><p>
+							<p><b>Age: $age</b><p>
 							<a class='btn btn-success ' href= 'index.php?add_selection=$worker_id' >Add To JobBucket</a>
 					</div>
 					</a>	
@@ -209,6 +215,12 @@ function getGenreWorker() {
 				$area = $row_pro['area'];
 				$city = $row_pro['city'];
 				$state = $row_pro['state'];
+				$da = $dob;
+				$birthDate = date("m-d-Y",strtotime($da));
+                $birthDate = explode("-", $birthDate);
+                $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md")
+                ? ((date("Y") - $birthDate[2]) - 1)
+                : (date("Y") - $birthDate[2]));
 				echo "
 				    <a href= 'details.php?worker_id=$worker_id' target='blank' class='links'>
 					<div id = 'single_product'>
@@ -218,7 +230,7 @@ function getGenreWorker() {
 							<p style='color:black'>Work: $area, <br>$city, $state</p>
 							<p><b>Religion: $religion</b><p>
 							<p><b>Experience: $experience</b><p>
-							<p><b>Age var</b><p>
+							<p><b>Age: $age</b><p>
 							<a class='btn btn-success ' href= 'index.php?add_selection=$worker_id' >Add To JobBucket</a>
 					</div>
 					</a>	

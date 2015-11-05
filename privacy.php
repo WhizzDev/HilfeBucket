@@ -85,6 +85,8 @@ If you believe that any information we are holding on you is incorrect or incomp
 </div><br><br>
 <h2 align="center" style="margin-bottom:50px">PLEASE READ IT CAREFULLY...</h2>
 <?php include "footer.php";?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 

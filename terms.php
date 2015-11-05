@@ -63,6 +63,8 @@ display:none;
 <h4 align="center" style="margin-bottom:50px">PLEASE READ IT CAREFULLY...</h4>
 
 <?php include "footer.php"?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 

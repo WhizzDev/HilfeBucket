@@ -81,7 +81,7 @@ include "navbar.php";
 				<!--jobbucket ke update ke lia hain-->
 				<?php
 					$ip = getIp();
-					if(isset($_POST['update_cart'])) {
+					if(isset($_POST['update_cart']) && isset($_POST['remove'])) {
 						foreach($_POST['remove'] as $remove_id) {
 							$delete_product = "delete from selections where w_id = '$remove_id' AND ip_add='$ip' ";
 							$run_delete = mysqli_query ($con, $delete_product);

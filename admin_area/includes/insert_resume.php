@@ -207,9 +207,6 @@ include("includes/db.php");
 			<textarea name="family_desc" placeholder="Family Background" class="form-control" cols="50" rows="10"></textarea>
 		</div>
 		<div class="form-group col-sm-offset-1 col-sm-12">
-			<textarea name="keywords" placeholder="Keywords" class="form-control" cols="50" rows="5"></textarea>
-		</div>
-		<div class="form-group col-sm-offset-1 col-sm-12">
 			<input type ="submit" name ="insert_post"   value="Upload Now" class="btn btn-primary"/>
 		</div>
 	</form>
@@ -243,14 +240,13 @@ include("includes/db.php");
         $image_tmp = $_FILES['image']['tmp_name'];	
         move_uploaded_file($image_tmp,"worker_images/$image");
 		
-		$keywords = $_POST['keywords'];
 		
 		$insert_res = "insert into workers
 			(worker_id,occ_id,genre_id,name,dob,religion,gender,fee,org,state,city,area,
-			experience,work_desc,family_desc,image,keywords)  values
+			experience,work_desc,family_desc,image)  values
 			('','".$occ_id."','".$genre_id."','".$name."','".$dob."','".$religion."','".$gender."',
 			'".$fee."','".$org."','".$state."','".$city."','".$area."','".$experience."','".$work_desc."',
-			'".$family_desc."','".$image."','".$keywords."')";
+			'".$family_desc."','".$image."')";
 			
 		$insert_worker = mysqli_query($con, $insert_res);
 		
